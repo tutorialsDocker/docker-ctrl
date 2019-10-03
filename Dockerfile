@@ -1,6 +1,6 @@
 FROM tensorflow/tensorflow:1.14.0
 RUN apt-get update
-RUN apt-get install -y git python-setuptools curl lsb-release
+RUN apt-get install -y git python-setuptools
 
 #Clone ctrl (GPT-2 Salesforce)
 WORKDIR /home
