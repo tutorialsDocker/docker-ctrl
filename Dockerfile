@@ -17,3 +17,5 @@ WORKDIR /home/fastBPE
 RUN pip install cython
 RUN g++ -std=c++11 -pthread -O3 fastBPE/main.cc -IfastBPE -o fast
 RUN python setup.py install
+
+WORKDIR /home/ctrl
